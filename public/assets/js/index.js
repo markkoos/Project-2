@@ -6,9 +6,9 @@ const loginBtn = document.getElementById(`login`);
 
 // Event Listeners for each button
 registerBtn.addEventListener(`click`, () => {
-    window.location.assign(`../form.html`)
+    window.location.assign(`/api/form`)
 });
 
 loginBtn.addEventListener(`click`, () => {
-    window.location.assign(`../login.html`)
+    window.location.assign(`/api/login`)
 });
