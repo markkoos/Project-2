@@ -4,7 +4,7 @@ const{ Model, DataTypes } = require('sequelize');
 // allows the form model to connect to the server
 const sequelize = require('../config/connection');
 
-class Form extends Model{};
+class Form extends Model {};
 
 Form.init(
     {
@@ -20,7 +20,7 @@ Form.init(
         },
         password:{
             type: DataTypes.STRING,
-            allowNull: false, 
+            allowNull: true, 
         },
         aboutme:{
             type: DataTypes.STRING,
@@ -28,23 +28,23 @@ Form.init(
         },
         steamUsername:{
             type: DataTypes.STRING,
-            allowNull: false, 
+            allowNull: true, 
         },
         twitchUsername:{
             type: DataTypes.STRING,
-            allowNull: false, 
+            allowNull: true, 
         },
         gameGenre:{
             type: DataTypes.STRING,
-            allowNull: false, 
+            allowNull: true, 
         },
         favoriteGame:{
             type: DataTypes.STRING,
-            allowNull: false, 
+            allowNull: true, 
         },
         favoriteConsole:{
             type: DataTypes.STRING,
-            allowNull: false, 
+            allowNull: true, 
         }
 
     },
@@ -57,4 +57,5 @@ Form.init(
     }
 );
 
-module.exports = Form;
+// not sure why it only works with brackets
+module.exports = {Form};
