@@ -1,0 +1,59 @@
+
+.article__two {
+    overflow-x: hidden;
+}
+#btn_slider {
+    height: fit-content;
+}
+.slider {
+    width: 1500px;
+    height: fit-content;
+    margin: 15px auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider span:nth-of-type(2) {
+    left: 95%;
+}
+.slider section {
+    width: 98%;
+    height: 450px;
+    background: transparent;
+    margin: 0px auto;
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+}
+.slider section::webkit-scrollbar {
+    visibility: hidden;
+}
+.slider div {
+    min-width: 500px;
+    height: 400px;
+    position: relative;
+    left: 0;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0px 5px;
+    color: white;
+    background: #689068;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+section div > * {
+    color: #F0F0F0;
+}
+section div img {
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    max-height: 400px;
+    max-width: 750px;
+    object-fit: scale-down;
+}
