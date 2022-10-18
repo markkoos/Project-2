@@ -41,5 +41,6 @@ xhr.addEventListener("readystatechange", function () {
 
 xhr.open("GET", "https://video-game-news.p.rapidapi.com/all");
 xhr.setRequestHeader("x-rapidapi-host", "video-game-news.p.rapidapi.com");
-xhr.setRequestHeader("x-rapidapi-key", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+xhr.setRequestHeader("x-rapidapi-key", "xxxxxxxxxxxxxxxxxxxxxxxxxxxx");
 xhr.send(data);
+
