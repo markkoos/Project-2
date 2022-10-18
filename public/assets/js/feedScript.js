@@ -1,6 +1,8 @@
 const data = null;
 const xhr = new XMLHttpRequest();
 
+require('dotenv').config();
+
 xhr.withCredentials = true;
 xhr.addEventListener("readystatechange", function () {
     const res = JSON.parse(this.responseText);
@@ -41,6 +43,6 @@ xhr.addEventListener("readystatechange", function () {
 
 xhr.open("GET", "https://video-game-news.p.rapidapi.com/all");
 xhr.setRequestHeader("x-rapidapi-host", "video-game-news.p.rapidapi.com");
-xhr.setRequestHeader("x-rapidapi-key", "xxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+xhr.setRequestHeader("x-rapidapi-key", "570565d3dbmshaa50c044e67a7c3p147829jsn2a024d94fd11");
 xhr.send(data);
 
