@@ -21,9 +21,9 @@ router.get(`/`, async (req, res) => {
  
 });
 
-router.get(`/:id`, async (req, res) => {
+router.get(`/:username`, async (req, res) => {
     try {
-        const userData = await Form.findByPk(req.params.id)
+        const userData = await Form.findOne({ where: { username: req.params.username } });
 
         const user = userData.get({ plain: true});
 
