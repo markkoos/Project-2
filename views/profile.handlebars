@@ -1,16 +1,46 @@
-<div class="user-profile">
-  <div id="username">
-    <h2>{{username}}</h2>
+<div class="container mb-5">
+  <div class="row">
+
+    <div class="col-md-3">
+      <div class="card mb-4">
+        <div class="card-body text-center p-5">
+          <img src="https://via.placeholder.com/150" class="rounded-circle"></img>
+          <h4>{{username}}</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col favorites">
+      <div class="jumbotron p-5">
+        <ul>
+          <li>Favorite Game Genre: {{gameGenre}}</li>
+          <li>Favorite Game: {{favoriteGame}}</li>
+          <li>Favorite Console: {{favoriteConsole}}</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
-  <div id="avatar">
-    <img src="https://steamuserimages-a.akamaihd.net/ugc/1031834816621498609/996E16C66A34F659566064EB608C901F95B69D40/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"></img>
-  </div>
-  <div id="about-me">
-    <p>About Me: {{aboutme}}</p>
-  </div>
-  <div id="other-names">
-    <h5>Steam: {{steamUsername}}</h5>
-    <h5>Twitch: {{twitchUsername}}</h5>
+
+  <div class="row align-items-center">
+
+    <div class="col-md-3">
+      <div class="card mb-4">
+        <div class="card-body text-center">
+          <p>Links</p>
+          <p>Steam: {{steamUsername}}</p>
+          <p><a href="twitch.tv/{{twitchUsername}}">twitch.tv/{{twitchUsername}}</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col about-me">
+      <div class="jumbotron p-5">
+        <h5>About Me</h5>
+        <p>{{aboutme}}</p>
+      </div>
+    </div>
+
   </div>
 </div>
 
