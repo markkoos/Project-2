@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UserForm</title>
+    <title>GameSpace - Login</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
-    <h1>GameSpace</h1>
+    <header>
+        <nav class="nav-top" style="border-radius: 0px; z-index: 10;">
+            <img src="/assets/image/GF-Logo-black.png" alt="algobest-logo" width="150" height="65" style="margin: 0px 10px;">
+        </nav>
+        <nav class="nav-bottom">
+            <div style="margin-left: 40px; text-shadow: 10px 0px 15px rgba(0, 0, 0, 0.60);">
+                <h1 style="color: #F1D00A; letter-spacing: 5px;">GameSpace:</h1>
+                <h1 style="color: #f3efe0">Enter Login Information</h1 style="color: ">
+            </div>
+        </nav>
+    </header>
         <form action="/api/feed" method="post">
-            <div class="accountInfo">
-                <h2>Enter Your Login Information</h2>
-                <div>
-                    <label for="username">Username:</label>
-                    <input type="text" name="username" id="username" value="">
-                </div>
+            <div id="content">
+                <article class="article__two">
+                    <div class="accountInfo">
+                        <div>
+                            <label for="username">Username:</label>
+                            <input type="text" name="username" id="username" value="">
+                        </div>
 
-                <div>
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" value="">
-                </div>
+                        <div>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" value="">
+                        </div>
 
-                <div>
-                    <button type="submit" id="sendLogin">Login</button>
-                </div>
+                        <div>
+                            <button type="submit" id="sendLogin">Login</button>
+                        </div>
+                    </div>
+                </article>
             </div>
         </form>
 </body>
 </html>
 
-<script src="./js/login.js"></script>
+<script src="/assets/js/login.js"></script>
