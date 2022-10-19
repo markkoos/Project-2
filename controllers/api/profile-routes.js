@@ -14,10 +14,24 @@ const { Form } = require(`../../models/form`);
 // ]
 
 // Get route to user-profile page
-router.get(`/`, async (req, res) => {
+router.post(`/`, async (req, res) => {
+    try{
+        // const userProfile = await Form.findOne({
+        //     where:{
+        //         username: req.body.username,
+        //     }
+        // });
+        // console.log(req.body.username)
+        // const user = userData.get({ plain: true});
 
-    // rendering the user-profile page
-     res.render(`profile`);
+        // rendering the user-profile page
+        res.render(`profile`);
+
+    }catch(err){
+        res.status(500).json(err)
+    }
+
+
  
 });
 
