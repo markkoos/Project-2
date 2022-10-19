@@ -95,16 +95,12 @@ iframe {
     border-radius: 20px;
     box-shadow: 10px 10px 25px rgba(0,0,0,0.35);
     margin: 20px;
-
 }
 
 main {
     /* display: flex; */
 }
 
-.userFeed{
-
-}
 
 article{
     box-shadow: 10px 10px 25px rgba(0,0,0,0.35);
