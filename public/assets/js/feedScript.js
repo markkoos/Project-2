@@ -7,17 +7,17 @@ xhr.addEventListener("readystatechange", function () {
 
     function h3(text){
         const articleOne = document.querySelector(".article__one");
-        var h = document.createElement("h3");
-        var t = document.createTextNode(text);
-        h.appendChild(t);
-        articleOne.appendChild(h);
+        var hea = document.createElement("h3");
+        var tex = document.createTextNode(text);
+        hea.appendChild(tex);
+        articleOne.appendChild(hea);
     }
     function paragraph(text){
         const articleOne = document.querySelector(".article__one");
-        var p = document.createElement("p");
+        var par = document.createElement("p");
         var t2 = document.createTextNode(text);
-        p.appendChild(t2);
-        articleOne.appendChild(p); 
+        par.appendChild(t2);
+        articleOne.appendChild(par); 
     }
     function hr() {
         const articleOne = document.querySelector(".article__one");
@@ -43,4 +43,3 @@ xhr.open("GET", "https://video-game-news.p.rapidapi.com/all");
 xhr.setRequestHeader("x-rapidapi-host", "video-game-news.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "570565d3dbmshaa50c044e67a7c3p147829jsn2a024d94fd11");
 xhr.send(data);
-
