@@ -27,7 +27,7 @@ router.post('/data', async(req, res) =>{
             userData.password = await bcrypt.hash(req.body.password, 10);
             userData.verifypassword = await bcrypt.hash(req.body.verifypassword, 10);
             const sendData = await Form.create(userData);
-            res.sendFile('form.html', {root:'public'});
+            res.sendFile('login.html', {root:'public'});
         }catch(err){
             res.status(500).json(err);
         }
