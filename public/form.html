@@ -5,88 +5,109 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>UserForm</title>
+        <link rel="stylesheet" href="/assets/css/index.css">
     </head>
     <body>
-        <h1>GameSpace</h1>
+        <header>
+            <nav class="nav-top" style="border-radius: 0px; z-index: 10;">
+                <img src="/assets/image/GF-Logo-black.png" alt="algobest-logo" width="150" height="65" style="margin: 0px 10px;">
+            </nav>
+            <h2 id="acc-info">Registration</h2>
+            <nav class="nav-bottom">
+                <div style="margin-left: 40px; text-shadow: 10px 0px 15px rgba(0, 0, 0, 0.60);">
+                    <h1 style="color: #F1D00A; letter-spacing: 5px;">GameSpace:</h1>
+                    <h1 style="color: #f3efe0">Account Information</h1 style="color: ">
+                </div>
+            </nav>
+        </header>
+        <main>
             <form id="form" action="/api/form/data" method="post">
-                <div class="accountInfo">
-                    <h2>Account Information</h2>
-                    <div>
-                        <label for="username">Username:</label>
-                        <input type="text" name="username" id="username" value="">
-                    </div>
+                <div id="content">
+                    <article class="article__two">
+                        <div class="accountInfo">
+                            <div>
+                                <label for="username">Enter Your Username:</label>
+                                <input type="text" name="username" id="username" value="">
+                            </div>
 
-                    <div>
-                        <label for="password">Password:</label>
-                        <input type="password" name="password" id="password" value="">
-                    </div>
+                            <div>
+                                <label for="password">Enter Your Password:</label>
+                                <input type="password" name="password" id="password" value="">
+                            </div>
 
-                    <div>
-                        <label for="verifypassword">Verify Password:</label>
-                        <input type="password" name="verifypassword" id="verifypassword" value="">
-                    </div>
+                            <div>
+                                <label for="verifypassword">Re-Enter Your Password:</label>
+                                <input type="password" name="verifypassword" id="verifypassword" value="">
+                            </div>
 
+                        </div>
+
+                        <div class="userDescription">
+                            <h3>User Description</h3>
+                            <div>
+                                <label for="aboutme">About Me</label>
+
+                                <textarea id="aboutme" name="aboutme" rows="5" cols="50" value=""></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="userInfo">
+                            <h3>User Information</h3>
+                            <div>
+                                <label for="steamUsername">Steam Username</label>
+                                <input type="text" name="steamUsername" id="steamUsername" value="">
+                            </div>
+
+                            <div>
+                                <label for="twitchUsername">Twitch Username</label>
+                                <input type="text" name="twitchUsername" id="twitchUsername" value="">
+                            </div>
+
+                            <!-- add game genres, change value and text -->
+                            <div>
+                                <label for="gameGenre">What is your favorite game genre?</label>
+                                <select name="gameGenre">
+                                    <option value="">Select an option</option>
+                                    <option value="Shooter">Shooter (FPS & TPS)</option>
+                                    <option value="RTS">RTS</option>
+                                    <option value="MOBA">MOBA</option>
+                                    <option value="RPG">RPG</option>
+                                    <option value="Party">Party</option>
+                                    <option value="Sandbox">Sandbox</option>
+                                    <option value="Sports">Sports</option>
+                                    <option value="Horror">Horror</option>
+                                    <option value="Platformer">Platformer</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="favoriteGame">What is your favorite game?</label>
+                                <input type="text" name="favoriteGame" id="favoriteGame" value="">
+                            </div>
+
+                            <div>
+                                <label for="favoriteConsole">What is your favorite gaming console?</label>
+                                <select name="favoriteConsole">
+                                    <option value="">Select an option</option>
+                                    <option value="PC">PC</option>
+                                    <option value="Nintendo Switch">Nintendo Switch</option>
+                                    <option value="Xbox Series X">Xbox Series X</option>
+                                    <option value="Playstation 5">Playstation 5</option>
+                                    <option value="Nintendo GameCube">Nintendo GameCube (the correct option)</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+
+                        <button type="submit" id="submitButton">Submit</button>
+                    </article>
                 </div>
-
-                <div class="userDescription">
-                    <h2>User Description</h2>
-                    <div>
-                        <label for="aboutme">About Me</label>
-
-                        <textarea id="aboutme" name="aboutme" rows="5" cols="50" value=""></textarea>
-                    </div>
-
-                </div>
-
-                <div class="userInfo">
-                    <h2>User Information</h2>
-                    <div>
-                        <label for="steamUsername">Steam Username</label>
-                        <input type="text" name="steamUsername" id="steamUsername" value="">
-                    </div>
-
-                    <div>
-                        <label for="twitchUsername">Twitch Username</label>
-                        <input type="text" name="twitchUsername" id="twitchUsername" value="">
-                    </div>
-
-                    <!-- add game genres, change value and -->
-                    <div>
-                        <label for="gameGenre">What is your favorite game genre?</label>
-                        <select name="gameGenre">
-                            <option value="">Select an option</option>
-                            <option value="A">A</option>
-                            <option value="A">B</option>
-                            <option value="A">C</option>
-                            <option value="A">D</option>
-                            <option value="A">E</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="favoriteGame">What is your favorite game?</label>
-                        <input type="text" name="favoriteGame" id="favoriteGame" value="">
-                    </div>
-
-                    <div>
-                        <label for="favoriteConsole">What is your favorite gaming console?</label>
-                        <select name="favoriteConsole">
-                            <option value="">Select an option</option>
-                            <option value="A">A</option>
-                            <option value="A">B</option>
-                            <option value="A">C</option>
-                            <option value="A">D</option>
-                            <option value="A">E</option>
-                        </select>
-                    </div>
-
-
-                </div>
-
-                <button type="submit" id="submitButton">Submit</button>
-
             </form>
+
+        </main>
             <p id="submitConfirm"></p>
-        <!-- <script src="/public/assets/js/formHandler.js"></script> -->
+        <script src="/assets/js/formHandler.js"></script>
     </body>
 </html>

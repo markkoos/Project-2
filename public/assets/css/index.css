@@ -146,6 +146,41 @@ footer {
     box-shadow: 0px 0px 2px rgba(0,0,0,0.35);
 }
 
+/* ------------------------FORM.HTML STYLING------------------------ */
+
+#acc-info {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 45px;
+    font-style: italic;
+    text-align: center;
+    padding: 40px;
+}
+
+#content {
+    font-size: 30px;
+}
+
+
+
+
+
+/* ------------------------INDEX.HTML STYLING----------------------- */
+
+.welcome-stuff {
+    padding: 50px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#welcome-text {
+    color: #272418;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 45px;
+    font-style: italic;
+}
+
 
 /* ------------------------PROFILE STYLING----------------------- */
 
@@ -180,7 +215,7 @@ footer {
 }
 
 
-/* ------------------------------------------------------------------ */
+/* ----------------------------MEDIA QUERIES------------------------- */
 
 @media screen and (max-width: 1336px) {
     main {
