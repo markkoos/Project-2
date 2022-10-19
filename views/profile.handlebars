@@ -1,0 +1,67 @@
+<head>
+  <title>GameSpace - {{username}}</title>
+</head>
+<body>
+  <header>
+    <nav class="nav-top" style="border-radius: 0px; z-index: 10;">
+      <img src="/assets/image/GF-Logo-black.png" alt="algobest-logo" width="150" height="65" style="margin: 0px 10px;">
+      <button id="partnerLinks" onclick="location.href='//localhost:3001/api/feed'" type="button">Home</button>
+    </nav>
+    <div class="header-container">
+
+      <div class="user-picture">
+        <img id="pfp" src="/assets/image/omen.png">
+        <h1 id="username">{{username}}</h1>
+      </div>
+
+      <div class="header-title">
+        <h2>About Me: </h2>
+        <h3 id="about-text">{{aboutme}}</h3>
+      </div>
+
+    </div>
+
+      <nav class="nav-bottom">
+        <div style="margin-left: 40px; text-shadow: 10px 0px 15px rgba(0, 0, 0, 0.60);">
+            <h1 style="color: #F1D00A; letter-spacing: 5px;">GameSpace:</h1>
+            <h1 style="color: #f3efe0">More Information</h1 style="color: ">
+        </div>
+      </nav>
+
+  </header>
+  <main>
+      <div id="content">
+        <article class="article__two">
+          <h1 id="personal-favs">Favorite Game</h1>
+          <hr>
+          <div>
+            <section>
+              <div id="favs">
+                <h3>{{favoriteGame}} </h1>
+              </div>
+            </section>
+          </div>
+          <h1 id="personal-favs">Favorite Game Genre</h1>
+          <hr>
+          <div>
+            <section>
+              <div id="favs">
+                <h3>{{gameGenre}}</h3>
+              </div>
+            </section>
+          </div>
+          <h1 id="personal-favs">Favorite Console</h1>
+          <hr>
+          <div>
+            <section>
+              <div id="favs">
+                <h3>{{favoriteConsole}}</h3>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+  </main>
+</body>
+
+{{!-- <script src="/js/login.js"></script> --}}

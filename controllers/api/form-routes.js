@@ -19,15 +19,15 @@ router.get('/', (req, res) => {
 router.post('/data', async(req, res) =>{
     const userData = req.body;
         try{
-            // if(!userData.verifypassword === userData.password){
-            //     prompt(`Passwords do not match.`)
-            // }else{
-            //     return;
-            // }
-            userData.password = await bcrypt.hash(req.body.password, 10);
-            userData.verifypassword = await bcrypt.hash(req.body.verifypassword, 10);
-            const sendData = await Form.create(userData);
-            res.sendFile('form.html', {root:'public'});
+            if(!(userData.verifypassword === userData.password)){
+                res.sendFile('form.html', {root:'public'})
+            }else{
+            
+                userData.password = await bcrypt.hash(req.body.password, 10);
+                userData.verifypassword = await bcrypt.hash(req.body.verifypassword, 10);
+                const sendData = await Form.create(userData);
+                res.sendFile('login.html', {root:'public'});
+            }
         }catch(err){
             res.status(500).json(err);
         }

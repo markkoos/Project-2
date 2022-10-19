@@ -1,6 +1,8 @@
 const data = null;
 const xhr = new XMLHttpRequest();
 
+require('dotenv').config();
+
 xhr.withCredentials = true;
 xhr.addEventListener("readystatechange", function () {
     const res = JSON.parse(this.responseText);
