@@ -156,6 +156,10 @@ footer {
     color: white;
 }
 
+.featured-user {
+    text-align: center;
+}
+
 /* ------------------------FORM.HTML STYLING------------------------ */
 
 #acc-info {

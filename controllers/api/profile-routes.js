@@ -41,6 +41,8 @@ router.get(`/:username`, async (req, res) => {
 
         const user = userData.get({ plain: true});
 
+        console.log(userData);
+
         res.render(`profile`, user)
     } catch (err) {
         res.status(500).json(err)
