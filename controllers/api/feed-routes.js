@@ -3,7 +3,21 @@ const { Form } = require(`../../models/form`);
 const { Feed } = require(`../../models/feed`);
 const axios = require(`axios`);
 
+router.post(`/`, async (req, res) => {
+  const name = req.body.username
+  try {
+      const userData = await Form.findOne({
+          where:{
+              username: name,
+          }
+      })
+      const user = userData.get({ plain: true});
+      res.render(`feed`, user);
 
+  } catch (err) {
+      res.status(500).json(err)
+  }
+});
 
 router.get(`/`, async (req, res) => {
   try {
