@@ -2,6 +2,8 @@ const router = require(`express`).Router();
 const { Form } = require(`../../models/form`);
 const { Feed } = require(`../../models/feed`);
 const axios = require(`axios`);
+require('dotenv').config();
+
 
 router.get(`/`, async (req, res) => {
   try {
@@ -9,7 +11,7 @@ router.get(`/`, async (req, res) => {
       method: 'GET',
       url: 'https://video-game-news.p.rapidapi.com/all',
       headers: {
-          'X-RapidAPI-Key': '570565d3dbmshaa50c044e67a7c3p147829jsn2a024d94fd11',
+          'X-RapidAPI-Key': process.env.API_KEY,
           'X-RapidAPI-Host': 'video-game-news.p.rapidapi.com'
       }
   };
