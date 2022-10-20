@@ -1,9 +1,5 @@
 <head>
-<<<<<<< HEAD
     <title>Daily Game News</title>
-=======
-    <title>MY-GAME - Daily Game News</title>
->>>>>>> main
 </head>
 <body>
     <header>
@@ -15,14 +11,10 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/A-UGsgsOWxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <div class="header-title">
-                <h1>VIDEO GAME NEWS LIKE NEVER BEFORE!</h1>
+                <h1>VIDEO GAME CONTENT, BABY!</h1>
                 <h2>NINTENDO. PLAYSTATION. XBOX. PC.</h2>
-                <button id="gameFeed">GO TO YOUR GAMEFEED</button>
-                <button id="userFeed">GO TO YOUR USERFEED</button>
-<<<<<<< HEAD
+                <button id="gameFeed" onclick="location.href='//localhost:3001/api/myprofile/markkoos'" type="button">GO TO YOUR PROFILE</button>
                 
-=======
->>>>>>> main
             </div>
         </div>
 
@@ -106,12 +98,13 @@
                 </div>
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/0H6nI56jMAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2SNF4M_v7wc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2AZmuZNu5LA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
             <article class="userFeed">
             <h1>Your Fellow Gamer Feed!</h1>
                 <div> 
-<<<<<<< HEAD
-                <h3 class="username"> User Name: </h3>
+                <h3 class="username"> User Name:</h3>
                 <h3 class="userDescription"> User Description: </h3>
                 <h3 class="userInfo"> User Info: </h3>
                 <h3 class="steamUsername"> Steam Username: </h3>
@@ -119,29 +112,16 @@
                 <h3 class="gameGenre"> Game Genre: </h3>
                 <h3 class="favoriteGame"> Favorite Game: </h3>
                 <h3 class="favoriteConsole"> Favorite Console: </h3>
-=======
-                <h3 class="username"> User Name: {{username}} </h3>
-                <h3 class="aboutme"> About Me: {{aboutme}} </h3>
-                <h3 class="steamUsername"> Steam Username: {{steamUsername}} </h3>
-                <h3 class="twitchUsername"> Twitch Username: {{twitchUsername}} </h3>
-                <h3 class="gameGenre"> Game Genre: {{gameGenre}} </h3>
-                <h3 class="favoriteGame"> Favorite Game: {{favoriteGame}} </h3>
-                <h3 class="favoriteConsole"> Favorite Console: {{favoriteConsole}} </h3>
->>>>>>> main
                 </div>
                 
                 
             </article>
             <article class="article__one">
-                <h1>Latest Game News!</h1>
-<<<<<<< HEAD
-                {{!-- <h1>{{url}}</h1>
-                <h1>{{text}}</h1>
-                <h1>{{publication}}</h1>
-                <h1>{{source}}</h1> --}}
-=======
-                
->>>>>>> main
+                <h1>Bit of Gaming News!</h1>
+                <div class="news-text">
+                    <h2 id="news-url"><a href="{{url}}">{{text}}</a></h2>
+                    <h2 id="news-source">Source - {{source}}</h2>
+                </div>
             </article>
         </div>
         <aside>
@@ -157,8 +137,4 @@
         </aside>
     </main>
 
-<<<<<<< HEAD
-    <script src="/controllers/api/feed-routes.js"></script>
-=======
-    <script src="/assets/js/feedScript.js"></script>
->>>>>>> main
+    <script src="../controllers/api/feed-routes.js"></script>
